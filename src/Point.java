@@ -50,7 +50,20 @@ public class Point implements Comparable<Point> {
      * @return the slope between this point and the specified point
      */
     public double slopeTo(Point that) {
-        //if (this.getY() == this.getY())
+        //if (this.getY() == that.getY()) return +0.0;
+        //if (this.getX() == that.getX()) return Double.POSITIVE_INFINITY;
+    	if (this.getX() == that.getX()) {
+    		if (this.getY() == that.getY()) {
+    			return Double.NEGATIVE_INFINITY;
+    		}
+    		return Double.POSITIVE_INFINITY;
+    	}
+    	else if (this.getY() == that.getY()) {
+			return +0.0;
+		}
+    	else {
+    		//return (()/())
+    	}
     	
     	return 0.0; //PLACEHOLDER
     }
