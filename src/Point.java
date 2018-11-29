@@ -78,8 +78,16 @@ public class Point implements Comparable<Point> {
      */
     public int compareTo(Point that) {
         /* YOUR CODE HERE */
+    	if(that.y == this.y && that.x == this.x)
+    		return 0; 
+    	if(that.y > this.y)
+    		return 1;
+    	else if (that.y == this.y)
+    		return -1; 
+    	else if (that.x > this.x)
+    		return 1; 
     	
-    	return 0; //PLACEHOLDER
+    	return -1; //PLACEHOLDER
     }
 
     /**
