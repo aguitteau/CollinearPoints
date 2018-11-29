@@ -1,6 +1,5 @@
 import edu.princeton.cs.algs4.StdDraw;
 import java.util.Comparator;
-import edu.princeton.cs.algs4.StdDraw;
 
 public class Point implements Comparable<Point> {
 
@@ -50,28 +49,12 @@ public class Point implements Comparable<Point> {
      * @return the slope between this point and the specified point
      */
     public double slopeTo(Point that) {
-<<<<<<< HEAD
+
     	if(this.getY() == that.y && this.x == that.x)
     		return Double.NEGATIVE_INFINITY;
     	
     	if (that.x == this.x)
     		return Double.POSITIVE_INFINITY;
-=======
-        //if (this.getY() == that.getY()) return +0.0;
-        //if (this.getX() == that.getX()) return Double.POSITIVE_INFINITY;
-    	if (this.getX() == that.getX()) {
-    		if (this.getY() == that.getY()) {
-    			return Double.NEGATIVE_INFINITY;
-    		}
-    		return Double.POSITIVE_INFINITY;
-    	}
-    	else if (this.getY() == that.getY()) {
-			return +0.0;
-		}
-    	else {
-    		//return (()/())
-    	}
->>>>>>> f5d229593be994c50f828b2008ff4b91578e46eb
     	
         if (this.getY() == that.getY())
         	return 0.0; 
